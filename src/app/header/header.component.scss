@@ -1,0 +1,53 @@
+@import "../../assets/global";
+
+.header-main {
+  height: $main-header-height;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+
+  .header-logo {
+    img {
+      width: 160px;
+    }
+  }
+
+  .header-navigation-bar {
+    height: $main-header-height + 1;
+    border-radius: 40px 0 0 40px;
+    display: flex;
+    background: $theme-color;
+
+    li {
+      .go-to-dsci-button {
+        color: $theme-color;
+        background-color: #fff;
+      }
+
+      &.active {
+        a {
+          &:after {
+            content: url("../../assets/images/dot.png");
+            position: absolute;
+            left: 25px;
+            bottom: 8px;
+            height: 10px;
+            width: 10px;
+          }
+        }
+      }
+
+      a {
+        color: white;
+        position: relative;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .header-navigation-bar {
+      display: none ;
+    }
+  }
+}

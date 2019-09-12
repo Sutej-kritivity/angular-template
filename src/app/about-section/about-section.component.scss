@@ -1,0 +1,21 @@
+.heading {
+  &:before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 135px;
+    background: #000;
+    top: 25px;
+    left: -130px;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background: #000;
+    top: 19px;
+    left: -10px;
+    border-radius: 50%;
+  }
+}
