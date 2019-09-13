@@ -1,4 +1,4 @@
-@import "../../assets/global";
+@import "../../assets/scss/global";
 
 .header-main {
   height: $main-header-height;
@@ -6,6 +6,7 @@
   left: 0;
   right: 0;
   background-color: #fff;
+  z-index: 1000;
 
   .header-logo {
     img {

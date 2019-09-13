@@ -1,21 +1,40 @@
-.heading {
-  &:before {
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 135px;
-    background: #000;
-    top: 25px;
-    left: -130px;
+@import "../../assets/scss/global";
+.about-section {
+  height: 550px;
+}
+.component-heading {
+  color: $theme-color;
+  height: 70px;
+
+  .heading {
+    font-size: 30px;
+    position: relative;
+    font-family: 'Poppins-Bold', sans-serif;
+
+    &:before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 1000px;
+      background: $theme-color;
+      top: 20px;
+      left: -1020px;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      height: 15px;
+      width: 15px;
+      background: $theme-color;
+      top: 14px;
+      left: -25px;
+      border-radius: 50%;
+    }
   }
-  &:after {
-    content: "";
-    position: absolute;
-    height: 15px;
-    width: 15px;
-    background: #000;
-    top: 19px;
-    left: -10px;
-    border-radius: 50%;
+  .sub-heading {
+    font-size: 16px;
+    line-height: 6px;
+    font-family: 'Poppins-SemiBold', sans-serif;
   }
 }
