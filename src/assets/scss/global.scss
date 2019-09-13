@@ -1,5 +1,28 @@
 $main-header-height: 70px;
 $theme-color: #2D4BA0;
+.theme-button-default, .theme-button-outline {
+  min-width: 120px;
+  min-height: 50px;
+  margin: 2px 8px;
+  box-shadow: none;
+}
+
+.theme-button-default {
+  background: $theme-color;
+  border-radius: 0;
+  color: white;
+  &.active {
+    box-shadow: 0 3px 5px 0 fade_out($theme-color, 0.6);
+  }
+}
+
+.theme-button-outline {
+  background-color: #fff;
+  border: 2px solid $theme-color;
+  border-radius: 0;
+  color: $theme-color;
+}
+
 .component-heading {
   color: $theme-color;
   height: 70px;
@@ -30,6 +53,7 @@ $theme-color: #2D4BA0;
       border-radius: 50%;
     }
   }
+
   .sub-heading {
     font-size: 16px;
     line-height: 6px;
