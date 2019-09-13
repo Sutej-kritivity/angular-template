@@ -1,2 +1,38 @@
 $main-header-height: 70px;
 $theme-color: #2D4BA0;
+.component-heading {
+  color: $theme-color;
+  height: 70px;
+
+  .heading {
+    font-size: 30px;
+    position: relative;
+    font-family: 'Poppins-Bold', sans-serif;
+
+    &:before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 1000px;
+      background: $theme-color;
+      top: 20px;
+      left: -1020px;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      height: 15px;
+      width: 15px;
+      background: $theme-color;
+      top: 14px;
+      left: -25px;
+      border-radius: 50%;
+    }
+  }
+  .sub-heading {
+    font-size: 16px;
+    line-height: 6px;
+    font-family: 'Poppins-SemiBold', sans-serif;
+  }
+}
